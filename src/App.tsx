@@ -14,6 +14,11 @@ import ExperienceTimeline from './components/ExperienceTimeline';
 import SkillsGrid from './components/SkillsGrid';
 import ContactSection from './components/ContactSection';
 
+import backendWorkspaceImg from './assets/images/backend_developer_workspace_1783497013051.jpg';
+import backendArchitectureImg from './assets/images/backend_architecture_isometric_1783497146758.jpg';
+import backendProjectsImg from './assets/images/backend_projects_env_1783497251765.jpg';
+import modernDeskImg from './assets/images/modern_developer_desk_1783497336784.jpg';
+
 export default function App() {
   const [activeNav, setActiveNav] = useState('home');
   const [heroTab, setHeroTab] = useState<'workspace' | 'architecture' | 'deployment' | 'desk' | 'topology'>('workspace');
@@ -223,7 +228,7 @@ export default function App() {
               <div className="w-full bg-card-dark border border-border-subtle rounded-[20px] overflow-hidden shadow-xl group relative">
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img
-                    src="/src/assets/images/backend_developer_workspace_1783497013051.jpg"
+                    src={backendWorkspaceImg}
                     alt="Backend Developer Workspace"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -246,7 +251,7 @@ export default function App() {
               <div className="w-full bg-card-dark border border-border-subtle rounded-[20px] overflow-hidden shadow-xl group relative">
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img
-                    src="/src/assets/images/backend_architecture_isometric_1783497146758.jpg"
+                    src={backendArchitectureImg}
                     alt="Backend System Architecture"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -269,7 +274,7 @@ export default function App() {
               <div className="w-full bg-card-dark border border-border-subtle rounded-[20px] overflow-hidden shadow-xl group relative">
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img
-                    src="/src/assets/images/backend_projects_env_1783497251765.jpg"
+                    src={backendProjectsImg}
                     alt="Backend Projects Deployment Environment"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -292,7 +297,7 @@ export default function App() {
               <div className="w-full bg-card-dark border border-border-subtle rounded-[20px] overflow-hidden shadow-xl group relative">
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img
-                    src="/src/assets/images/modern_developer_desk_1783497336784.jpg"
+                    src={modernDeskImg}
                     alt="Premium Minimal Modern Developer Desk"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
